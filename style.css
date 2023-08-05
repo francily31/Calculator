@@ -1,0 +1,367 @@
+body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /*cor background body*/
+    /*background: #000;*/
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+/*imagem não repete: no-repeat. imagem repete na vertical e horizontal: repeat. imagem repete na vertical: repeat-y.*/
+
+#container-img{
+    /*
+    *eliminamos uma margin descessária do body, e criamos o container que preenche a tela toda
+    */
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    
+    /*Adiciona a imagem de fundo*/
+    background: url(img/bbioda.jpg);
+    background-size: cover;
+}
+
+/*para tirar a linha do botão*/
+a{
+    text-decoration: none;
+}
+
+.text{
+    text-align:left;
+}
+
+.btn1{
+    text-align:center;
+    display: block;
+    width: 130px;
+    height: 45px;
+    /* tamanho dos botões*/
+    font-size: 20px;
+    margin: 3px;
+    /*cor button*/
+    background: #FFDEAD;
+    /*background-color: #8A2BE2*/
+    /*COR DOS NÚMEROS DENTRO DO BUTTON*/
+    color: black;
+}
+
+.btn2{
+    text-align:center;
+    display: block;
+    width: 200px;
+    height: 100px;
+    /* tamanho dos botões*/
+    font-size: 20px;
+    margin: 3px;
+    /*cor button*/
+    background: #8A2BE2;
+    /*background-color: #8A2BE2*/
+    /*COR DOS NÚMEROS DENTRO DO BUTTON*/
+    color: black;
+}
+
+.btn3{
+    text-align: end;
+    display: block;
+    
+}
+
+.btn4{
+    text-align:center;
+    display: block;
+    width: 130px;
+    height: 45px;
+    /* tamanho dos botões*/
+    font-size: 20px;
+    margin: 3px;
+    /*cor button*/
+    background: #FFDEAD;
+    /*background-color: #8A2BE2*/
+    /*COR DOS NÚMEROS DENTRO DO BUTTON*/
+    color: black;
+}
+
+.btn5{
+    text-align:center;
+    display: block;
+    width: 130px;
+    height: 45px;
+    /* tamanho dos botões*/
+    font-size: 20px;
+    margin: 3px;
+    /*cor button*/
+    background: #FFDEAD;
+    /*background-color: #8A2BE2*/
+    /*COR DOS NÚMEROS DENTRO DO BUTTON*/
+    color: black;
+}
+
+.calculadora{
+    position: absolute;
+    /*cor calculadora*/
+    background-color: rgba(0, 0, 0, 0.6);/*cor da borda da calculadora*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%); /*isso interfere na posição da*/
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.botao:hover{
+    background-color: black;
+}
+
+#resultado{
+    background-color: white;
+    width: 207px;
+    height: 40px;
+    margin: 7px;
+    font-size: 40px;
+    color: black;
+    text-align: right;
+    padding: 5px;
+}
+
+.pin{
+    background: #cf1596 ;
+    width: 50px;
+    height: 50px;
+    /* tamanho dos botões*/
+    font-size: 40px;
+    cursor: pointer;
+    margin: 3px;
+    border-radius: 25%;
+    color: #000000;
+}
+
+.gree{
+    background: #008000 ;
+    width: 50px;
+    height: 50px;
+    /* tamanho dos botões*/
+    font-size: 40px;
+    cursor: pointer;
+    margin: 3px;
+    border-radius: 25%;
+    color: #000000;
+
+}
+
+.blue{
+    background: #00f ;
+    width: 50px;
+    height: 50px;
+    /* tamanho dos botões*/
+    font-size: 40px;
+    cursor: pointer;
+    margin: 3px;
+    border-radius: 25%;
+    color: #000000;
+}
+
+.red{
+    background: #ff0000 ;
+    width: 50px;
+    height: 50px;
+    /* tamanho dos botões*/
+    font-size: 40px;
+    cursor: pointer;
+    margin: 3px;
+    border-radius: 25%;
+    color: #000000;
+}
+
+.orange{
+    background: #FF4500 ;
+    width: 50px;
+    height: 50px;
+    /* tamanho dos botões*/
+    font-size: 40px;
+    cursor: pointer;
+    margin: 3px;
+    border-radius: 25%;
+    color: #000000;
+}
+
+.aqua{
+    background: #00FFFF ;
+    width: 50px;
+    height: 50px;
+    /* tamanho dos botões*/
+    font-size: 40px;
+    cursor: pointer;
+    margin: 3px;
+    border-radius: 25%;
+    color: #000000;
+}
+
+
+.salmon{
+    background: #FA8072 ;
+    width: 50px;
+    height: 50px;
+    /* tamanho dos botões*/
+    font-size: 40px;
+    cursor: pointer;
+    margin: 3px;
+    border-radius: 25%;
+    color: #000000;
+}
+
+.crimson{
+    background: #DC143C ;
+    width: 50px;
+    height: 50px;
+    /* tamanho dos botões*/
+    font-size: 40px;
+    cursor: pointer;
+    margin: 3px;
+    border-radius: 25%;
+    color: #000000;
+}
+
+.sete{
+    width: 50px;
+    height: 50px;
+    /* tamanho dos botões*/
+    font-size: 40px;
+    cursor: pointer;
+    margin: 3px;
+    /*cor button*/
+    background-color: #FF8C00;
+    border-radius: 25%;
+    /*COR DOS NÚMEROS DENTRO DO BUTTON*/
+    color: #000000;
+}
+
+.oito{
+    width: 50px;
+    height: 50px;
+    /* tamanho dos botões*/
+    font-size: 40px;
+    cursor: pointer;
+    margin: 3px;
+    /*cor button*/
+    background-color: #FF69B4;
+    border-radius: 25%;
+    /*COR DOS NÚMEROS DENTRO DO BUTTON*/
+    color: #000000;
+}
+
+.nove{
+    width: 50px;
+    height: 50px;
+    /* tamanho dos botões*/
+    font-size: 40px;
+    cursor: pointer;
+    margin: 3px;
+    /*cor button*/
+    background-color: #FFFF00;
+    border-radius: 25%;
+    /*COR DOS NÚMEROS DENTRO DO BUTTON*/
+    color: #000000;
+}
+
+.quatro{
+    width: 50px;
+    height: 50px;
+    /* tamanho dos botões*/
+    font-size: 40px;
+    cursor: pointer;
+    margin: 3px;
+    /*cor button*/
+    background-color: #F5DEB3;
+    border-radius: 25%;
+    /*COR DOS NÚMEROS DENTRO DO BUTTON*/
+    color: #000000;
+}
+
+.cinco{
+    width: 50px;
+    height: 50px;
+    /* tamanho dos botões*/
+    font-size: 40px;
+    cursor: pointer;
+    margin: 3px;
+    /*cor button*/
+    background-color: #A0522D;
+    border-radius: 25%;
+    /*COR DOS NÚMEROS DENTRO DO BUTTON*/
+    color: #000000;
+}
+
+.seis{
+    width: 50px;
+    height: 50px;
+    /* tamanho dos botões*/
+    font-size: 40px;
+    cursor: pointer;
+    margin: 3px;
+    /*cor button*/
+    background-color: #008B8B;
+    border-radius: 25%;
+    /*COR DOS NÚMEROS DENTRO DO BUTTON*/
+    color: #000000;
+}
+
+.um{
+    width: 50px;
+    height: 50px;
+    /* tamanho dos botões*/
+    font-size: 40px;
+    cursor: pointer;
+    margin: 3px;
+    /*cor button*/
+    background-color: #00FF00;
+    border-radius: 25%;
+    /*COR DOS NÚMEROS DENTRO DO BUTTON*/
+    color: #000000;
+}
+
+.dois{
+    width: 50px;
+    height: 50px;
+    /* tamanho dos botões*/
+    font-size: 40px;
+    cursor: pointer;
+    margin: 3px;
+    /*cor button*/
+    background-color: #FFC0CB;
+    border-radius: 25%;
+    /*COR DOS NÚMEROS DENTRO DO BUTTON*/
+    color: #000;
+}
+
+.tres{
+    width: 50px;
+    height: 50px;
+    /* tamanho dos botões*/
+    font-size: 40px;
+    cursor: pointer;
+    margin: 3px;
+    /*cor button*/
+    background-color: #FF7F50;
+    border-radius: 25%;
+    /*COR DOS NÚMEROS DENTRO DO BUTTON*/
+    color: #000;
+}
+
+.zero{
+    width: 50px;
+    height: 50px;
+    /* tamanho dos botões*/
+    font-size: 40px;
+    cursor: pointer;
+    margin: 3px;
+    /*cor button*/
+    background-color: #000000;
+    border-radius: 25%;
+    /*COR DOS NÚMEROS DENTRO DO BUTTON*/
+    color: #fff;
+}
